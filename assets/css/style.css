@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Poppins&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+}
+
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(61, 61, 61);
+    transition-duration: 0.3s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.menu-item {
+    color: white;
+    text-decoration: none;
+}
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+.takechi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.takechi-txt {
+    font-family: 'Mulish', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.takechi-txt h1 {
+    font-size: 60px;
+}
+.takechi-txt h2 {
+    color: rgb(207, 207, 207);
+}
+.takechi-pfp {
+    width: 200px;
+    margin-right: 20px;
+}
+
+#payhip {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 100px;
+}
+.project-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(207, 207, 207);
+}
+.project-info-txt h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+.project-info-txt h2 {
+    font-size: 15px;
+}
+.project-files {
+    padding-top: 40px;
+    text-align: center;
+}
+.project-files h2 {
+    font-size: 20px;
+}
+.payhip-pf {
+    width: 70%;
+    height: 700px;
+}
+.payhip-pf h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.pfs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+.pfs-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pfs-template img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition-duration: 0.3s;
+}
+.pfs-template img:hover {
+    cursor: pointer;
+    width: 300px;
+    object-fit: cover;
+}
+
+#motion-design, #montage-edits, #animation-comp {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#motion-design h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+#montage-edits h1, #animation-comp h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.subtitle {
+    color: rgb(168, 168, 168);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.mute-txt {
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.portifolio-videos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+video {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(168, 168, 168);
+}
+.contact {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+.icon {
+    width: 30px;
+}
+.contact-guts-img {
+    width: 180px;
+}
+.contact h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+.contact h2 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+.contact h3 {
+    font-weight: lighter;
+    font-size: 15px;
+    color: rgb(24, 24, 24);
+}
+
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
